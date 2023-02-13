@@ -1,13 +1,8 @@
-
 // Store data of the inputs
 
 const article = document.getElementById('item')
 const articleAmounts = document.getElementById('total')
 const calculateBtn = document.querySelector('button')
-
-let articles = [];
-let list = document.getElementById("#article-list");
-let amounts = [];
 
 // Clear forms after data is entered
 
@@ -29,6 +24,9 @@ calculateBtn.addEventListener('click', (e) => {
         newArticle.append(list);
 });
 
+let articles = [];
+let list = document.getElementById("#article-list");
+let amounts = [];
 
 // Calculate total amounts
 

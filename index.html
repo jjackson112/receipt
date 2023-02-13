@@ -5,4 +5,28 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="app.js" defer></script>
 </head>
+<body>
+    <div class="receipt-container">
+        <div class="top">
+            <form>
+                <div class="article-div">
+                    <label for="name">Article</label>
+                    <input id="item" name="article" type="text" placeholder="apples, oranges" required>
+                </div>
+                <div class="amount-div">
+                    <label for="name">Amount</label>
+                    <input id="total" name="amount" type="text" placeholder="$9.33">
+                </div>
+                <button type="submit">Calculate Total</button>
+            </form>
+        </div>
+        <div class="bottom">
+            
+            <hr>
+            <div class="final-total">
+                <p><strong>Total</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

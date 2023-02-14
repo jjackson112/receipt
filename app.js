@@ -4,11 +4,9 @@ const article = document.getElementById('item')
 const articleAmounts = document.getElementById('total')
 const calculateBtn = document.querySelector('button')
 
-// Clear forms after data is entered
-
-function clearForm() {
-    document.form.reset();
-}
+let articles = [];
+let list = document.getElementById("#article-list");
+let amounts = [];
 
 // Display articles and their amounts
 
@@ -22,17 +20,19 @@ calculateBtn.addEventListener('click', (e) => {
         let li = document.createElement("li");
         li.innerText = article;
         newArticle.append(list);
-});
 
-let articles = [];
-let list = document.getElementById("#article-list");
-let amounts = [];
-
-// Calculate total amounts
+    // Calculate total amounts
 
 function calculateReceipt() {
     const finalTotal = document.getElementById('#final-total');
     let sum = 0;
     amounts.forEach(number => sum += number);
     finalTotal.innerHTML = `Total is ${finalTotal}`;
+}
+})
+
+// Clear forms after data is entered
+
+function clearForm() {
+    document.form.reset();
 }

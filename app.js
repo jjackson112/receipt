@@ -13,8 +13,8 @@ let amounts = [];
 calculateBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const newItem = document.getElementById('item').value;
-    const newAmount = document.getElementById('total').value;
+    const newItem = item.value;
+    const newAmount = itemAmounts.value;
     
         item.forEach((item) => {
         let newItem = document.createElement("li");

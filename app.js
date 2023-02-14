@@ -1,10 +1,10 @@
 // Store data of the inputs
 
-const article = document.getElementById('item')
-const articleAmounts = document.getElementById('total')
+const item = document.getElementById('item')
+const itemAmounts = document.getElementById('total')
 const calculateBtn = document.querySelector('button')
 
-let articles = [];
+let items = [];
 let list = document.getElementById("#article-list");
 let amounts = [];
 
@@ -13,13 +13,13 @@ let amounts = [];
 calculateBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const newArticle = document.getElementById('item').value;
+    const newItem = document.getElementById('item').value;
     const newAmount = document.getElementById('total').value;
     
-    newArticle.forEach((article) => {
-        let li = document.createElement("li");
-        li.innerText = article;
-        newArticle.append(list);
+        item.forEach((item) => {
+        let newItem = document.createElement("li");
+        li.innerText = newItem.value;
+        newItem.append(list);
 
     // Calculate total amounts
 
@@ -35,4 +35,5 @@ function calculateReceipt() {
 
 function clearForm() {
     document.form.reset();
+}
 }
